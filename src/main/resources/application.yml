@@ -1,0 +1,19 @@
+server:
+    port: 9090
+
+spring:
+    datasource:
+        url: jdbc://postgresql/localhost:5432/auth
+        username: postgres
+        password: 1234qw
+    jpa:
+        hibernate:
+            ddl-auto: create
+        show-sql: true
+
+    security:
+        oauth2:
+            client:
+                registration:
+                  github:
+
